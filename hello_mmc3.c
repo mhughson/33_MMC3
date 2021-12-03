@@ -7,6 +7,7 @@
 #include "MMC3/mmc3_code.h"
 #include "MMC3/mmc3_code.c"
 #include "Sprites.h"
+#include "ninja_scene.h"
 
  
 #pragma bss-name(push, "ZEROPAGE")
@@ -44,17 +45,20 @@ unsigned char wram_array[0x2000];
 
 #pragma bss-name(pop)
 
+const unsigned char palette_bg[16]={ 
+	0x0f,0x0c,0x1c,0x3c,
+	0x0f,0x0a,0x19,0x39,
+	0x0f,0x17,0x26,0x21,
+	0x0f,0x0f,0x0f,0x0f 
+};
 
 
-
-
-
-const unsigned char palette_bg[]={
-0x0f, 0, 0x10, 0x30,
-0x0f, 0, 0, 0,
-0x0f, 0, 0, 0,
-0x0f, 0, 0, 0
-}; 
+// const unsigned char palette_bg[]={
+// 0x0f, 0, 0x10, 0x30,
+// 0x0f, 0, 0, 0,
+// 0x0f, 0, 0, 0,
+// 0x0f, 0, 0, 0
+// }; 
 
 const unsigned char palette_spr[]={
 0x0f, 0x09, 0x19, 0x29, // greens
@@ -224,7 +228,7 @@ void main (void) {
 	vram_put(0x2);
 	vram_put(0x2);
 
-	music_play(0);
+	//music_play(0);
 	//ppu_on_all(); // turn on screen
 	
 	set_chr_mode_5(8); // make sure the gear tiles loaded
@@ -250,6 +254,9 @@ void main (void) {
 	sprite_x = 0x50;
 	sprite_y = 0x30;
 	draw_sprites();
+
+	vram_adr(NTADR_A(0,0));
+	vram_unrle(ninja_scene);
 	
 	ppu_on_all(); //	turn on screen
 	
@@ -263,16 +270,16 @@ void main (void) {
 		
 		if(pad1 & PAD_A){ // shift screen right = subtract from scroll
 			scroll_top -= 0x80; // sub pixel movement
-			scroll2 -= 0x100; // 1 pixel
+			scroll2 -= 0x30; // 1 pixel
 			scroll3 -= 0x180;
-			scroll4 -= 0x200; 
+			scroll4 -= 0x300; 
 		}
 		
 		if(pad1 & PAD_B){ // shift screen right = subtract from scroll
 			scroll_top += 0x80; // sub pixel movement
-			scroll2 += 0x100; // 1 pixel
-			scroll3 += 0x180;
-			scroll4 += 0x200;
+			scroll2 += 0x50; // 1 pixel
+			scroll3 += 0x200;
+			scroll4 += 0x500;
 		}
 		
 		temp = scroll_top >> 8;
@@ -300,7 +307,7 @@ void main (void) {
 		double_buffer[4] = temp; // scroll value
 		double_buffer[5] = 0xfc; // CHR mode 5, change the 0xc00-0xfff tiles
 		double_buffer[6] = 8 + char_state; // value = 8,9,10,or 11
-		double_buffer[7] = 29; // scanline count
+		double_buffer[7] = 29 + 16; // scanline count
 		
 		// after the 2nd split
 		double_buffer[8] = 0xf5; // H scroll change
@@ -309,21 +316,22 @@ void main (void) {
 			double_buffer[10] = 0xf1; // $2001 test changing color emphasis
 			double_buffer[11] = 0xfe; // value COL_EMP_DARK 0xe0 + 0x1e
 			//double_buffer[11] = 0x1f; // alternate value for grayscale
-		double_buffer[12] = 30; // scanline count
+		double_buffer[12] = 15 ; // scanline count
 		
 		// after the 3rd split
 		double_buffer[13] = 0xf5; // H scroll change
-		temp = scroll4 >> 8;
-		double_buffer[14] = temp; // scroll value
-		double_buffer[15] = 30; // scanline count
+		//temp = scroll4 >> 8;
+		double_buffer[14] = 0; // scroll value (none)
+		double_buffer[15] = 82 + 2; // scanline count
 		
 		double_buffer[16] = 0xf5; // H scroll change
-		double_buffer[17] = 0; // to zero, to set the fine X scroll
-		double_buffer[18] = 0xf6; // 2 writes to 2006 shifts screen
-		double_buffer[19] = 0x20; // need 2 values...
-		double_buffer[20] = 0x00; // PPU address $2000 = top of screen
+		temp = scroll4 >> 8;
+		double_buffer[17] = temp; // scroll value
+		// double_buffer[18] = 0xf6; // 2 writes to 2006 shifts screen
+		// double_buffer[19] = 0x20; // need 2 values...
+		// double_buffer[20] = 0x00; // PPU address $2000 = top of screen
 		
-		double_buffer[21] = 0xff; // end of data
+		double_buffer[18] = 0xff; // end of data
 		
 		
 		if(pad1 & PAD_LEFT){ // shift screen right = subtract from scroll

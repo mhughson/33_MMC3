@@ -267,7 +267,7 @@ irq_parser:
 @3:
 	cpx #$f5 
 	bne @4
-	ldx #4
+	ldx #3
 @better_timing: ; don't change till near the end of the line
 	dex
 	bne @better_timing

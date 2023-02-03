@@ -287,7 +287,7 @@ void main (void) {
 		
 		if((get_frame_count() & 0x03) == 0){ // every 4th frame
 			++char_state;
-			if(char_state >=4) char_state = 0;
+			if(char_state >=2) char_state = 0;
 		}
 		
 		

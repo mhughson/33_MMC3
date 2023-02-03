@@ -115,24 +115,24 @@ _RoundSprR:
 	.byte	$00
 	.byte	$80
 _ninja_scene:
-	.byte	$60
+	.byte	$45
 	.byte	$00
-	.byte	$60
+	.byte	$45
 	.byte	$BF
 	.byte	$01
-	.byte	$60
+	.byte	$45
 	.byte	$11
 	.byte	$02
 	.byte	$03
 	.byte	$04
 	.byte	$05
 	.byte	$01
-	.byte	$60
+	.byte	$45
 	.byte	$02
 	.byte	$06
 	.byte	$07
 	.byte	$01
-	.byte	$60
+	.byte	$45
 	.byte	$14
 	.byte	$06
 	.byte	$03
@@ -147,12 +147,12 @@ _ninja_scene:
 	.byte	$0A
 	.byte	$0B
 	.byte	$01
-	.byte	$60
+	.byte	$45
 	.byte	$07
 	.byte	$06
 	.byte	$07
 	.byte	$01
-	.byte	$60
+	.byte	$45
 	.byte	$05
 	.byte	$06
 	.byte	$07
@@ -172,7 +172,7 @@ _ninja_scene:
 	.byte	$05
 	.byte	$0E
 	.byte	$01
-	.byte	$60
+	.byte	$45
 	.byte	$02
 	.byte	$0E
 	.byte	$02
@@ -336,44 +336,44 @@ _ninja_scene:
 	.byte	$18
 	.byte	$19
 	.byte	$1A
-	.byte	$60
+	.byte	$45
 	.byte	$04
 	.byte	$1B
 	.byte	$1A
-	.byte	$60
+	.byte	$45
 	.byte	$06
 	.byte	$1B
 	.byte	$1A
-	.byte	$60
+	.byte	$45
 	.byte	$06
 	.byte	$1B
 	.byte	$1A
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$1C
 	.byte	$00
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$1D
 	.byte	$1E
 	.byte	$1F
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$20
 	.byte	$1F
-	.byte	$60
+	.byte	$45
 	.byte	$06
 	.byte	$20
 	.byte	$1F
-	.byte	$60
+	.byte	$45
 	.byte	$06
 	.byte	$20
 	.byte	$1F
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$20
 	.byte	$00
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$21
 	.byte	$22
@@ -385,23 +385,23 @@ _ninja_scene:
 	.byte	$22
 	.byte	$28
 	.byte	$29
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$2A
 	.byte	$23
 	.byte	$27
-	.byte	$60
+	.byte	$45
 	.byte	$02
 	.byte	$22
 	.byte	$23
 	.byte	$27
-	.byte	$60
+	.byte	$45
 	.byte	$04
 	.byte	$22
 	.byte	$2B
 	.byte	$2C
 	.byte	$00
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$21
 	.byte	$22
@@ -413,105 +413,105 @@ _ninja_scene:
 	.byte	$22
 	.byte	$32
 	.byte	$33
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$34
 	.byte	$35
 	.byte	$36
-	.byte	$60
+	.byte	$45
 	.byte	$02
 	.byte	$22
 	.byte	$35
 	.byte	$36
-	.byte	$60
+	.byte	$45
 	.byte	$04
 	.byte	$22
 	.byte	$2B
 	.byte	$37
 	.byte	$00
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$21
 	.byte	$22
 	.byte	$35
 	.byte	$36
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$22
 	.byte	$32
 	.byte	$33
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$34
 	.byte	$35
 	.byte	$36
-	.byte	$60
+	.byte	$45
 	.byte	$02
 	.byte	$22
 	.byte	$35
 	.byte	$36
-	.byte	$60
+	.byte	$45
 	.byte	$04
 	.byte	$22
 	.byte	$2B
 	.byte	$37
 	.byte	$00
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$21
 	.byte	$22
 	.byte	$35
 	.byte	$36
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$22
 	.byte	$32
 	.byte	$33
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$34
 	.byte	$35
 	.byte	$36
-	.byte	$60
+	.byte	$45
 	.byte	$02
 	.byte	$22
 	.byte	$35
 	.byte	$36
-	.byte	$60
+	.byte	$45
 	.byte	$04
 	.byte	$22
 	.byte	$2B
 	.byte	$37
 	.byte	$00
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$21
 	.byte	$22
 	.byte	$35
 	.byte	$36
-	.byte	$60
+	.byte	$45
 	.byte	$02
 	.byte	$31
 	.byte	$22
 	.byte	$32
 	.byte	$33
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$34
 	.byte	$35
 	.byte	$36
-	.byte	$60
+	.byte	$45
 	.byte	$02
 	.byte	$22
 	.byte	$35
 	.byte	$36
-	.byte	$60
+	.byte	$45
 	.byte	$04
 	.byte	$22
 	.byte	$2B
 	.byte	$2C
 	.byte	$00
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$21
 	.byte	$22
@@ -523,17 +523,17 @@ _ninja_scene:
 	.byte	$22
 	.byte	$3A
 	.byte	$3B
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$3C
 	.byte	$35
 	.byte	$36
-	.byte	$60
+	.byte	$45
 	.byte	$02
 	.byte	$22
 	.byte	$38
 	.byte	$39
-	.byte	$60
+	.byte	$45
 	.byte	$02
 	.byte	$3D
 	.byte	$3D
@@ -541,36 +541,36 @@ _ninja_scene:
 	.byte	$2B
 	.byte	$37
 	.byte	$00
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$3E
 	.byte	$3F
 	.byte	$40
-	.byte	$60
+	.byte	$45
 	.byte	$05
 	.byte	$41
 	.byte	$42
-	.byte	$60
+	.byte	$45
 	.byte	$09
 	.byte	$3F
 	.byte	$40
-	.byte	$60
+	.byte	$45
 	.byte	$05
 	.byte	$41
 	.byte	$3F
 	.byte	$00
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$43
 	.byte	$44
-	.byte	$45
-	.byte	$46
+	.byte	$E0
+	.byte	$E1
 	.byte	$47
 	.byte	$48
-	.byte	$48
-	.byte	$49
+	.byte	$E2
+	.byte	$E3
 	.byte	$00
-	.byte	$60
+	.byte	$45
 	.byte	$02
 	.byte	$4A
 	.byte	$4B
@@ -578,14 +578,14 @@ _ninja_scene:
 	.byte	$4B
 	.byte	$4D
 	.byte	$00
-	.byte	$60
-	.byte	$03
 	.byte	$45
-	.byte	$46
+	.byte	$03
+	.byte	$E0
+	.byte	$E1
 	.byte	$47
 	.byte	$48
-	.byte	$48
-	.byte	$49
+	.byte	$E2
+	.byte	$E3
 	.byte	$4A
 	.byte	$4E
 	.byte	$4F
@@ -594,23 +594,23 @@ _ninja_scene:
 	.byte	$50
 	.byte	$51
 	.byte	$51
-	.byte	$52
-	.byte	$53
+	.byte	$F0
+	.byte	$F1
 	.byte	$51
 	.byte	$51
-	.byte	$54
-	.byte	$55
+	.byte	$F2
+	.byte	$F3
 	.byte	$51
-	.byte	$60
+	.byte	$45
 	.byte	$0B
-	.byte	$52
-	.byte	$53
+	.byte	$F0
+	.byte	$F1
 	.byte	$51
 	.byte	$51
-	.byte	$54
-	.byte	$55
+	.byte	$F2
+	.byte	$F3
 	.byte	$51
-	.byte	$60
+	.byte	$45
 	.byte	$05
 	.byte	$56
 	.byte	$57
@@ -653,12 +653,12 @@ _ninja_scene:
 	.byte	$5B
 	.byte	$5C
 	.byte	$5B
-	.byte	$60
+	.byte	$45
 	.byte	$07
 	.byte	$5D
 	.byte	$5C
 	.byte	$5D
-	.byte	$60
+	.byte	$45
 	.byte	$02
 	.byte	$5C
 	.byte	$5D
@@ -668,7 +668,7 @@ _ninja_scene:
 	.byte	$5B
 	.byte	$5C
 	.byte	$5B
-	.byte	$60
+	.byte	$45
 	.byte	$03
 	.byte	$5E
 	.byte	$5F
@@ -703,16 +703,16 @@ _ninja_scene:
 	.byte	$5E
 	.byte	$5F
 	.byte	$00
-	.byte	$60
+	.byte	$45
 	.byte	$47
 	.byte	$A0
-	.byte	$60
+	.byte	$45
 	.byte	$07
 	.byte	$AA
-	.byte	$60
+	.byte	$45
 	.byte	$07
 	.byte	$05
-	.byte	$60
+	.byte	$45
 	.byte	$07
 	.byte	$44
 	.byte	$55
@@ -731,13 +731,13 @@ _ninja_scene:
 	.byte	$01
 	.byte	$00
 	.byte	$50
-	.byte	$60
+	.byte	$45
 	.byte	$07
 	.byte	$00
-	.byte	$60
+	.byte	$45
 	.byte	$06
 	.byte	$00
-	.byte	$60
+	.byte	$45
 	.byte	$00
 _palette_bg:
 	.byte	$0F
@@ -1728,10 +1728,10 @@ L0496:	lda     _scroll_top+1
 ;
 	inc     _char_state
 ;
-; if(char_state >=4) char_state = 0;
+; if(char_state >=2) char_state = 0;
 ;
 	lda     _char_state
-	cmp     #$04
+	cmp     #$02
 	bcc     L0497
 	lda     #$00
 	sta     _char_state

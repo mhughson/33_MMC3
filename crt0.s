@@ -398,7 +398,9 @@ sounds_data:
 .segment "CHARS"
 
 	.incbin "ninja.chr"
-	.incbin "ninja.chr"
+	.incbin "wheels.chr"
+;	.incbin "ninja2.chr"
+;	.incbin "ninja3.chr"
 ;	.incbin "Alpha.chr"
 ;	.incbin "Gears.chr"
 ; the CHARS segment is much bigger, and I could have 

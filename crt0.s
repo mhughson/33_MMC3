@@ -1,7 +1,7 @@
 ; Startup code for cc65 and Shiru's NES library
 ; based on code by Groepaz/Hitmen <groepaz@gmx.net>, Ullrich von Bassewitz <uz@cc65.org>
 
-
+; test
 
 
 ; Edited to work with MMC3 code
